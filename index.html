@@ -8,28 +8,173 @@
 </head>
 <body>
 
+    <!-- Dynamic Transparent Navigation Bar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <a href="#photo" class="logo">Dhruv Patel</a> 
+            <ul>
+                <li><a href="#photo" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#certificates" class="nav-link">Certifications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Intro Header/Hero Component -->
     <section id="photo">
-    <img src="headshot.jpg" alt="Dhruv Patel Headshot" class="headshot">
-    <h1>Dhruv Patel</h1>
-    <p class="tagline">Passionate Computer Science student | Tech enthusiast</p>
+        <img src="headshot.jpg" alt="Dhruv Patel Headshot" class="headshot">
+        <h1>Dhruv Patel</h1>
+        <p class="tagline">DevOps Engineer Intern at SkyIT Services</p>
 
-    <div class="buttons">
-
-        <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" class="btn linkedin" target="_blank">LinkedIn </a>
-        <a href="Resume.pdf" class="btn resume" target="_blank">Resume</a>
-        
-    </div>
+        <div class="buttons">
+            <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" class="btn linkedin" target="_blank">LinkedIn</a>
+            <a href="Resume.pdf" class="btn resume" target="_blank">View Resume</a>
+        </div>
     </section>
 
+    <!-- Profile Overview Section -->
     <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, my name is Dhruv Patel. 
-        I'm a Senior at Tennessee Technological University. 
-        I'm majoring in Computer Science with a Concentration in Cyber Security.
-        I am from Columbia, TN.
-    </p>
+        <h2>About Me</h2>
+        <p>
+            I am Dhruv Patel, a graduate from Tennessee Technological University with a Bachelor's Degree in Computer Science (Concentration in CyberSecurity). 
+            Currently, I thrive as a DevOps Engineer Intern at SkyIT Services, managing production cloud infrastructure, automating CI/CD release engineering lifecycles, and developing full stack components.
+        </p>
     </section>
 
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="card">
+            <h3>Tennessee Technological University</h3>
+            <div class="card-meta">B.S. in Computer Science • Cybersecurity Focus</div>
+            <p>Graduated May 2026 | Cumulative GPA: 3.63 / 4.00</p>
+        </div>
+    </section>
     
+    <!-- Feature-Packed Projects Grid -->
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="grid-layout">
+            
+            <!-- Project 1 -->
+            <div class="card">
+                <h3>Responder Ready</h3>
+                <div class="card-meta">Full-Stack Web Application</div>
+                <p>Full stack web application for First Responders and Fire fighters. Designed to help them manage their Psychological Health through Interactive Modules, Reaction based games, Psychological Assessments, track their sleep schedule and mood log.</p>
+                <ul>
+                    <li>Engineered a dynamic content management system using PDF2JSON library, allowing admins to upload PDFs that automatically parse into interactive, slide-based learning modules on the user homepage.</li>
+                    <li>Architected and optimized relational database schemas in MySQL, redesigning core tables to improve data integrity and support scalable feature expansion for user progress tracking</li>
+                    <li>Developed a secure password recovery system integrated with Brevo API for automated email delivery, ensuring reliable user authentication and account security.</li>
+                    <li>Modernized the Admin Dashboard UI, improving the layout for better data visualization and administrative workflow efficiency using Bootstrap and custom CSS3</li>
+                    <li>Integrated Frontend-backend communication via RESTful APIs to handle sensitive data securely, focusing on real-time feedback and privacy compliant storage.</li>
+                </ul>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <h3>Course Management Dashboard</h3>
+                <div class="card-meta">Web Dashboard</div>
+                <p>Web-based dashboard for Professors that can manage course content, student's feedbacks and students can manage enrolled courses and leave feedback for Professors.</p>
+                <ul>
+                    <li>Collaborated with a team of 2 on Front end development using HTML, CSS, Javascript, and Bootstrap to create a visually appealing, responsive, and accessible dashboard where professors can manage courses, enroll students, and view students feedback, and students can manage enrolled courses and leave feedback for professors, with robust email/password validation for secure login.</li>
+                    <li>Contributed to back-end development with a team of 4 using Node.js, Express, and MariaDB to enable professors to add, manage courses, enroll students, and create student reviews.</li>
+                </ul>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <h3>Weather Application</h3>
+                <div class="card-meta">API Integration</div>
+                <p>Mobile-optimized Web application that provides real-time weather information for Cookeville, TN.</p>
+                <ul>
+                    <li>Built a responsive weather app using HTML, CSS, Javascript, and bootstrap to display real time weather data for Cookeville, TN.</li>
+                    <li>Integrated Open-Meteo API to fetch and display temperature, humidity, precipitation, and weather conditions.</li>
+                    <li>Enhanced user experience with sweetalert2 for error handling and a mobile optimized UI with apple touch icons.</li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
+    
+    <!-- Interactive Certifications Component -->
+    <section id="certificates">
+        <h2>Certifications</h2>
+        <ul class="cert-list">
+            <li class="cert-item">
+                <span><strong>Foundations of Git</strong> | GitKraken</span>
+                <a href="Git Certified by GitKraken.pdf" class="cert-btn" target="_blank">View Cert</a>
+            </li>
+            <li class="cert-item">
+                <span><strong>Linux Shell Scripting</strong> | LinkedIn Learning</span>
+                <a href="Linux Shell Scripting Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
+            </li>
+            <li class="cert-item">
+                <span><strong>DevOps Foundation</strong> | LinkedIn Learning</span>
+                <a href="DevOps Foundation Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
+            </li>
+            <li class="cert-item">
+                <span><strong>Accessibility for Web Design</strong> | LinkedIn Learning</span>
+                <a href="Accessibility for Web Design Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
+            </li>
+            <li class="cert-item">
+                <span><strong>Google Cloud Data Engr Professional Certificate</strong> | Google Cloud</span> <a href="">IN PROGRESS</a>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Modular Skill Badge Framework -->
+    <section id="skills">
+        <h2>Technical Core Skills</h2>
+        <div class="skills-container">
+            <div class="skills-category">
+                <h3>Languages</h3>
+                <div class="badges-wrapper">
+                    <span class="badge">C++</span>
+                    <span class="badge">JavaScript</span>
+                    <span class="badge">Bash Shell</span>
+                    <span class="badge">HTML5 / CSS3</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Frameworks & Databases</h3>
+                <div class="badges-wrapper">
+                    <span class="badge">Node.js</span>
+                    <span class="badge">Express Framework</span>
+                    <span class="badge">Bootstrap</span>
+                    <span class="badge">MySQL / MariaDB</span>
+                    <span class="badge">MongoDB</span>
+                    <span class="badge">RESTful APIs</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>DevOps & Cloud Systems</h3>
+                <div class="badges-wrapper">
+                    <span class="badge">Google Cloud Platform (GCP)</span>
+                    <span class="badge">CI/CD Automations</span>
+                    <span class="badge">Git / GitHub Actions</span>
+                    <span class="badge">Linux Administration</span>
+                    <span class="badge">Postman Runtime</span>
+                    <span class="badge">Docker</span>
+                </div>
+            </div>
+            <div class="skills-category">
+                <h3>Soft skills</h3>
+                <div class="badges-wrapper">
+                    <span class="badge">Teamwork</span>
+                    <span class="badge">Communication</span>
+                    <span class="badge">Critical Thinking</span>
+                    <span class="badge">Problem Solving</span>
+                    <span class="badge">Time Management</span>
+                    <span class="badge">Multitasking</span>
+                </div>
+            </div>
+        </div>
+
+
+    <script src="script.js"></script>
 </body>
 </html>
