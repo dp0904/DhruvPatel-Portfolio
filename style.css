@@ -1,15 +1,75 @@
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+/* --- Color Variables & Reset --- */
+:root {
+    --bg-dark: #0f172a;        /* Sleek Deep Slate */
+    --bg-card: #1e293b;        /* Lighter Slate for Cards */
+    --accent-blue: #38bdf8;    /* Tech Electric Blue */
+    --accent-hover: #0ea5e9;   /* Darker Blue for Hovers */
+    --text-main: #f8fafc;      /* Bright Off-White */
+    --text-muted: #94a3b8;     /* Muted Gray for body text */
 }
 
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+}
+
+/* --- Fixed Transparent Navbar --- */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.3rem;
+    color: var(--accent-blue);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--text-muted);
+    font-weight: 500;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-blue);
+}
+
+/* --- Hero Section --- */
 #photo {
     text-align: center;
-    padding: 40px 20px;
-    background: linear-gradient(to bottom, #4a90e2, #f4f4f4);
+    padding: 140px 20px 80px;
+    background: radial-gradient(circle at top, #1e293b 0%, #0f172a 100%);
     min-height: 60vh;
     display: flex;
     flex-direction: column;
@@ -19,105 +79,221 @@ body {
 }
 
 .headshot {
-    width: 150px;
-    height: 150px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid var(--accent-blue);
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
 h1 {
-    font-size: 2.5em;
-    margin: 0 0 5px;
-    color: #fff;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 800;
+    background: linear-gradient(to right, #fff, var(--text-muted));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .tagline {
-    font-size: 1.2em;
-    color: #fff;
-    margin: 5px 0 15px;
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 600px;
+    margin: 5px 0 20px;
 }
 
+/* --- Interactive CTA Buttons --- */
 .buttons {
     display: flex;
     gap: 15px;
-    margin-top: 10px;
 }
 
 .btn {
-    padding: 12px 24px;
+    padding: 12px 28px;
     text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background-color 0.3s, transform 0.3s;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .linkedin {
-    background-color: #0077b5;
-    color: #fff;
+    background-color: var(--accent-blue);
+    color: #0f172a;
 }
 
 .linkedin:hover {
-    background-color: #005582;
+    background-color: var(--accent-hover);
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.4);
 }
 
 .resume {
-    background-color: #333;
-    color: #fff;
+    background-color: transparent;
+    color: var(--text-main);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .resume:hover {
-    background-color: #555;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-color: var(--text-main);
 }
 
-#about {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 30px 20px;
-    text-align: center;
+/* --- Section Global Layout --- */
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 80px 20px;
 }
 
 h2 {
-    font-size: 2em;
-    color: #4a90e2;
-    margin-bottom: 15px;
+    font-size: 2.25rem;
+    color: var(--text-main);
+    position: relative;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+/* Accent line under headings */
+h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 50px;
+    height: 4px;
+    background-color: var(--accent-blue);
+    border-radius: 2px;
 }
 
 p {
-    margin: 0 auto;
-    max-width: 600px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
     line-height: 1.8;
 }
 
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2em;
-    }
+/* --- Grid & Cards Architectures (Projects, Certs, Education) --- */
+.grid-layout {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
 
-    .tagline {
-        font-size: 1em;
-    }
+.card {
+    background-color: var(--bg-card);
+    padding: 30px;
+    border-radius: 12px;
+    text-align: left;
+    border: 1px solid rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
 
-    .buttons {
-        flex-direction: column;
-        gap: 12px;
-    }
+.card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(56, 189, 248, 0.2);
+}
 
-    .btn {
-        width: 100%;
-        max-width: 220px;
-        margin: 0 auto;
-    }
+.card h3 {
+    margin: 0 0 10px 0;
+    font-size: 1.4rem;
+    color: var(--text-main);
+}
 
-    #photo {
-        padding: 30px 15px;
-        min-height: 50vh;
-    }
+.card-meta {
+    font-size: 0.9rem;
+    color: var(--accent-blue);
+    margin-bottom: 15px;
+    font-weight: 500;
+}
 
-    #about {
-        margin: 20px auto;
-        padding: 20px 15px;
-    }
+.card ul {
+    padding-left: 20px;
+    margin-top: 15px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+/* --- Certifications List Custom Styles --- */
+.cert-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cert-item {
+    background: var(--bg-card);
+    padding: 18px 25px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.cert-btn {
+    padding: 6px 14px;
+    background: transparent;
+    border: 1px solid var(--accent-blue);
+    color: var(--accent-blue);
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.cert-btn:hover {
+    background: var(--accent-blue);
+    color: var(--bg-dark);
+}
+
+/* --- Skills Badges Layout --- */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.skills-category h3 {
+    font-size: 1.1rem;
+    color: var(--accent-blue);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.badges-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.badge {
+    background: var(--bg-card);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* --- Responsive Media Queries --- */
+@media (max-width: 768px) {
+    h1 { font-size: 2.2rem; }
+    h2 { font-size: 1.8rem; }
+    section { padding: 50px 20px; }
+    .nav-container { justify-content: center; }
+    .logo { display: none; } /* Focuses navbar space strictly on navigation links on small viewports */
+    .cert-item { flex-direction: column; align-items: flex-start; }
+    .cert-btn { width: 100%; text-align: center; box-sizing: border-box; }
 }
