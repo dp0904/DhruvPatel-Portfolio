@@ -8,17 +8,18 @@
 </head>
 <body>
 
-    <!-- Dynamic Transparent Navigation Bar -->
+
     <nav id="navbar">
         <div class="nav-container">
             <a href="#photo" class="logo">Dhruv Patel</a> 
             <ul>
-                <li><a href="#photo" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#certificates" class="nav-link">Certifications</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#photo" class="nav-link" aria-label="Home button that redirects to main page">Home</a></li>
+                <li><a href="#about" class="nav-link" aria-label="About button that redirects to about page">About</a></li>
+                <li><a href="#education" class="nav-link" aria-label="Education button that redirects to education section">Education</a></li>
+                <li><a href="#projects" class="nav-link" aria-label="Project button that redirects to Project section">Projects</a></li>
+                <li><a href="#certificates" class="nav-link" aria-label="Certificate button that redirects to certificate section">Certifications</a></li>
+                <li><a href="#skills" class="nav-link" aria-label="Skills button that redirects to skills section">Skills</a></li>
+                <li><a href="#contact" class="nav-link" aria-label="contact button that redirects to contact section">Contact</a></li>
                 
             </ul>
         </div>
@@ -26,27 +27,27 @@
 
     <!-- Intro Header/Hero Component -->
     <section id="photo">
-        <img src="headshot.jpg" alt="Dhruv Patel Headshot" class="headshot">
+        <img src="headshot.jpg" alt="Dhruv Patel Headshot" class="headshot" aria-label="My professional headshot">
         <h1>Dhruv Patel</h1>
-        <p class="tagline">DevOps Engineer Intern at SkyIT Services</p>
+        <p class="tagline" aria-label="Listed my Current position: Devops Engineer Intern for SKYIT services">DevOps Engineer Intern at SkyIT Services</p>
 
         <div class="buttons">
-            <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" class="btn linkedin" target="_blank">LinkedIn</a>
-            <a href="Resume.pdf" class="btn resume" target="_blank">View Resume</a>
+            <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" class="btn linkedin" target="_blank" aria-label="reference button that redirects to my linked in account">LinkedIn</a>
+            <a href="Resume.pdf" class="btn resume" target="_blank" aria-label="button that downloads my resume">View Resume</a>
         </div>
     </section>
 
     <!-- Profile Overview Section -->
     <section id="about">
         <h2>About Me</h2>
-        <p>
+        <p aria-label="brief description about me">
             I am Dhruv Patel, a graduate from Tennessee Technological University with a Bachelor's Degree in Computer Science (Concentration in CyberSecurity). 
             Currently, I thrive as a DevOps Engineer Intern at SkyIT Services, managing production cloud infrastructure, automating CI/CD release engineering lifecycles, and developing full stack components.
         </p>
     </section>
 
     <!-- Education Section -->
-    <section id="education">
+    <section id="education" aria-label="Education section">
         <h2>Education</h2>
         <div class="card">
             <h3>Tennessee Technological University</h3>
@@ -110,11 +111,11 @@
             </li>
             <li class="cert-item">
                 <span><strong>Linux Shell Scripting</strong> | LinkedIn Learning</span>
-                <a href="Linux Shell Scripting Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
+                <a href="Learning Linux Shell Scripting Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
             </li>
             <li class="cert-item">
                 <span><strong>DevOps Foundation</strong> | LinkedIn Learning</span>
-                <a href="DevOps Foundation Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
+                <a href="DevOps Foundations Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
             </li>
             <li class="cert-item">
                 <span><strong>Accessibility for Web Design</strong> | LinkedIn Learning</span>
@@ -174,6 +175,15 @@
             </div>
         </div>
 
+        <section id="contact"> 
+
+            <h2>Contact Me</h2>
+            <p>You can either email me at <a href="mailto:dkh0409@gmail.com" target="_blank">Email</a> or connect with me on <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" target="_blank">LinkedIn</a>.</p>
+        </section>
+
+        <footer>
+            <p>Thank you for visiting my portfolio :-)</p>
+        </footer>
 
     <script src="script.js"></script>
 </body>
