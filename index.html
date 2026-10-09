@@ -8,7 +8,6 @@
 </head>
 <body>
 
-
     <nav id="navbar">
         <div class="nav-container">
             <a href="#photo" class="logo">Dhruv Patel</a> 
@@ -20,7 +19,6 @@
                 <li><a href="#certificates" class="nav-link" aria-label="Certificate button that redirects to certificate section">Certifications</a></li>
                 <li><a href="#skills" class="nav-link" aria-label="Skills button that redirects to skills section">Skills</a></li>
                 <li><a href="#contact" class="nav-link" aria-label="contact button that redirects to contact section">Contact</a></li>
-                
             </ul>
         </div>
     </nav>
@@ -48,6 +46,7 @@
             and is eager to apply strong problem-solving skills to build end-to-end technology solutions in a collaborative, Agile environment.
         </p>
     </section>
+
     <section id="work-experience">
         <h2>Work Experience</h2>
         <div class="card">
@@ -55,19 +54,30 @@
             <div class="card-meta">SkyIT Services | May 2026 - August 2026</div>
             <ul>
                 <li>Automating CI/CD pipelines using GitHub Actions and Docker, reducing manual deployment effort and accelerating release cycles</li>
-                <li>Using Terraform to build and manage cloud infrastrucutre, and enabling repeatable, version-controlled infrastructure provisioning across environments</li>
+                <li>Using Terraform to build and manage cloud infrastructure, enabling repeatable, version-controlled infrastructure provisioning across environments</li>
                 <li>Managing scalable cloud infrastructure, ensuring high availability and cost efficiency.</li>
                 <li>Monitoring system performance, troubleshoot incidents, and documenting infrastructure runbooks for the team.</li>
             </ul>
         </div>
     </section>
 
-    
     <!-- Feature-Packed Projects Grid -->
     <section id="projects">
         <h2>Featured Projects</h2>
         <div class="grid-layout">
             
+            <!-- AWS Cloud Visitor Counter Project -->
+            <div class="card">
+                <h3>AWS Serverless Cloud Portfolio & API Counter</h3>
+                <div class="card-meta">AWS Infrastructure & Serverless Backend</div>
+                <p>End-to-end serverless cloud application hosting this personal portfolio and real-time visitor counter on AWS within the Free Tier.</p>
+                <ul>
+                    <li>Hosted static web assets on <strong>Amazon S3</strong> distributed globally via <strong>Amazon CloudFront CDN</strong> with HTTPS encryption and Origin Access Control (OAC).</li>
+                    <li>Engineered an event-driven microservice utilizing <strong>AWS Lambda (Python)</strong>, <strong>Amazon API Gateway (HTTP API)</strong>, and <strong>Amazon DynamoDB</strong> for atomic visitor counting.</li>
+                    <li>Configured CORS policies, strict IAM least-privilege roles, and zero-spend budget guardrails.</li>
+                </ul>
+            </div>
+
             <!-- Project 1 -->
             <div class="card">
                 <h3>Responder Ready</h3>
@@ -92,15 +102,16 @@
                     <li>Contributed to back-end development with a team of 4 using Node.js, Express, and MariaDB to enable professors to add, manage courses, enroll students, and create student reviews.</li>
                 </ul>
             </div>
+
             <div class="card">
                 <h3>Family Business Inventory & Revenue Dashboard</h3>
                 <div class="card-meta">Personal Project - Power BI</div>
                 <ul>
                     <li>Built a Power BI Dashboard Analyzing inventory and revenue data for a family owned retail business, comparing performance across rolling 6-month periods to surface trends.</li>
                     <li>Designed Visualizations to track revenue growth/decline period over period, highlighting seasonal patterns and informing inventory and purchasing decisions</li>
-
                 </ul>
             </div>
+
             <!-- Project 3 -->
             <div class="card">
                 <h3>Weather Application</h3>
@@ -126,7 +137,7 @@
             </li>
             <li class="cert-item">
                 <span><strong>AWS Cloud Solution Architect Specialization</strong> | AWS</span>
-                <a href="" class="cert-btn" target="_blank">In Progress</a>
+                <a href="AWS Solution Architect Certificate.pdf" class="cert-btn" target="_blank">View Cert</a>
             </li>
             <li class="cert-item">
                 <span><strong>SOC L1 Analyst Certificate</strong> | tryhackme</span>
@@ -164,7 +175,6 @@
                     <span class="badge">HTML5 / CSS3</span>
                     <span class="badge">Python</span>
                     <span class="badge">SQL</span> 
-
                 </div>
             </div>
             <div class="skills-category">
@@ -173,17 +183,16 @@
                     <span class="badge">Node.js</span>
                     <span class="badge">Express</span>
                     <span class="badge">MySQL / MariaDB</span>
-                    <span class="badge">MongoDB</span>
+                    <span class="badge">DynamoDB</span>
                     <span class="badge">RESTful APIs</span>
                     <span class="badge">Postman</span>
-                    <span class="badge">MariaDB</span>
                 </div>
             </div>
             <div class="skills-category">
                 <h3>DevOps & Cloud Systems</h3>
                 <div class="badges-wrapper">
+                    <span class="badge">AWS (S3, CloudFront, Lambda, API Gateway)</span>
                     <span class="badge">Google Cloud Platform (GCP)</span>
-                    <span class="badge">AWS (In Progress)</span>
                     <span class="badge">Terraform</span>
                     <span class="badge">CI/CD Automations</span>
                     <span class="badge">Git / GitHub Actions</span>
@@ -194,14 +203,14 @@
             <div class="skills-category">
                 <h3>Testing & Version Control</h3>
                 <div class="badges-wrapper">
-                    <span class="badge">Github</span>
+                    <span class="badge">GitHub</span>
                     <span class="badge">Unit Testing</span>
                     <span class="badge">Debugging</span>
                     <span class="badge">Root Cause Analysis</span>
                 </div>
             </div>
             <div class="skills-category">
-                <h3>Security (SOC) </h3>
+                <h3>Security (SOC)</h3>
                 <div class="badges-wrapper">
                     <span class="badge">SIEM (Splunk, Elastic Stack)</span>
                     <span class="badge">Wireshark</span>
@@ -223,7 +232,8 @@
                 </div>
             </div>
         </div>
-        
+    </section>
+
     <!-- Education Section -->
     <section id="education" aria-label="Education section">
         <h2>Education</h2>
@@ -234,15 +244,15 @@
         </div>
     </section>
 
-        <section id="contact"> 
+    <section id="contact"> 
+        <h2>Contact Me</h2>
+        <p>You can either email me at <a href="mailto:dkh0409@gmail.com" target="_blank">Email</a> or connect with me on <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" target="_blank">LinkedIn</a>.</p>
+    </section>
 
-            <h2>Contact Me</h2>
-            <p>You can either email me at <a href="mailto:dkh0409@gmail.com" target="_blank">Email</a> or connect with me on <a href="https://www.linkedin.com/in/dhruv-patel-576895262/" target="_blank">LinkedIn</a>.</p>
-        </section>
-
-        <footer>
-            <p>Thank you for visiting my portfolio :-)</p>
-        </footer>
+    <footer>
+        <p>Thank you for visiting my portfolio :-)</p>
+        <p style="margin-top: 8px; font-weight: 500;">Total Portfolio Views: <span id="visitor-count">...</span></p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
